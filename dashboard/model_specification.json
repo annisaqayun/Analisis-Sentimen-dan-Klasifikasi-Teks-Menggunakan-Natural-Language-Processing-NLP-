@@ -1,0 +1,33 @@
+{
+    "model_type": "Multinomial Naive Bayes",
+    "task": "Text Classification (Wine Quality)",
+    "classes": [
+        "Low",
+        "Medium",
+        "High"
+    ],
+    "preprocessing_steps": [
+        "Lowercase conversion",
+        "Punctuation removal",
+        "Numeric removal",
+        "Stopwords removal (NLTK English)",
+        "Lemmatization (WordNet)"
+    ],
+    "vectorizer": {
+        "type": "TfidfVectorizer",
+        "max_features": 2000,
+        "input_column": "description"
+    },
+    "model_parameters": {
+        "alpha": 0.5,
+        "fit_prior": true,
+        "class_prior": null
+    },
+    "best_performance_metrics": {
+        "Model": "Naive Bayes + TF-IDF",
+        "Accuracy": 0.685,
+        "Precision": 0.681,
+        "Recall": 0.685,
+        "F1-Score": 0.682
+    }
+}

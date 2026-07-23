@@ -1,0 +1,36 @@
+{
+    "sample_size": 119978,
+    "performance": {
+        "Accuracy": 64.62,
+        "Precision": 62.02,
+        "Recall": 63.42,
+        "F1-Score": 62.65
+    },
+    "class_distribution": {
+        "Medium": 55.95,
+        "High": 26.42,
+        "Low": 17.63
+    },
+    "confusion_matrix_percent": [
+        [
+            64.07,
+            1.62,
+            34.32
+        ],
+        [
+            3.73,
+            59.78,
+            36.49
+        ],
+        [
+            19.9,
+            13.7,
+            66.4
+        ]
+    ],
+    "classes": [
+        "High",
+        "Low",
+        "Medium"
+    ]
+}
